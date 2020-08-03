@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/acens.ico" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/bulma.min.css"/>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://kit.fontawesome.com/8275b66d7a.js" crossorigin="anonymous"></script>
+	<title>CRUD - Desafio de Projetos</title>
+</head>
+<body>
+	<section class="hero is-fullheight">
+		<div class="hero-body">
+			<div class="container">
+				<div class="column is-10 is-offset-1">
+					<table>
+						<tr>
+							<td>
+								<form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+									<div class="field has-text-centered">
+										<img src="img/acens.png" width="120px"/>
+									</div>
+									<div>
+										<label>Cidade*</label><label class="validation-error hide" id="nomeErro">Campo Obrigatório.</label>
+										<input type="text" name="nome" id="cidadeLabel">
+									</div>
+									<div  class="form-action-buttons">
+										<button type="submit" value = "Submit" class="button is-block is-link is-large is-fullwidth">Enviar</button>
+									</div>
+									<div class="field">
+										<h1>Status : <span id="status"></span></h1>
+									</div>
+									<div class="field">
+										<h1>Cidade: <span id="cidade"></span> </h1>
+									</div>
+									<div class="field">
+										<h1>Temperatura minima : <span id="temp_min"></span></h1>
+									</div>
+									<div class="field">
+										<h1>Temperatura maxima : <span id="temp_max"></span></h1>
+									</div>
+									<div class="field">
+										<h1>Humidade : <span id="humidade"></span></h1>
+									</div>
+									<div class="field">
+										<h1>Pais : <label id="pais"></label></h1>
+									</div>
+								</form>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
